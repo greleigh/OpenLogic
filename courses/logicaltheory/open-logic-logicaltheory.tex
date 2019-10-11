@@ -196,7 +196,8 @@ To define a derivation system for first-order logic we will use what we already 
 \cleardoublepage
 {\let\newpage\relax
 \let\clearpage\relax
-\part{Some Model Theory}
+%\part{Some Model Theory}
+
 \chapter{Basics of Model Theory}}
 
 \olimport*[model-theory/basics]{reducts-and-expansions}
@@ -258,12 +259,28 @@ To define a derivation system for first-order logic we will use what we already 
 \olimport*[intuitionistic-logic/introduction]{syntax}
 \olimport*[intuitionistic-logic/introduction]{bhk-interpretation}
 \olimport*[intuitionistic-logic/introduction]{natural-deduction}
-\olimport*[intuitionistic-logic/introduction]{axiomatic-derivations}
+%\olimport*[intuitionistic-logic/introduction]{axiomatic-derivations}
 \OLEndChapterHook
 
-\olimport*[intuitionistic-logic/semantics]{semantics}
-\olimport*[intuitionistic-logic/soundness-completeness]{soundness-completeness}
-\olimport*[intuitionistic-logic/propositions-as-types]{propositions-as-types}
+%\olimport*[intuitionistic-logic/semantics]{semantics}
+\chapter{Semantics}
+\olimport*[intuitionistic-logic/semantics]{introduction}
+\olimport*[intuitionistic-logic/semantics]{relational-models}
+\olimport*[intuitionistic-logic/semantics]{semantic-notions}
+%\olimport*[intuitionistic-logic/semantics]{topological-semantics}
+\OLEndChapterHook
+
+%\olimport*[intuitionistic-logic/soundness-completeness]{soundness-completeness}
+\chapter{Soundness and Completeness}
+%\olimport*[intuitionistic-logic/soundness-completeness]{soundness-axd}
+\olimport*[intuitionistic-logic/soundness-completeness]{soundness-nd}
+\olimport*[intuitionistic-logic/soundness-completeness]{lindenbaum}
+\olimport*[intuitionistic-logic/soundness-completeness]{canonical-model}
+\olimport*[intuitionistic-logic/soundness-completeness]{truth-lemma}
+\olimport*[intuitionistic-logic/soundness-completeness]{completeness-thm}
+\OLEndChapterHook
+
+%\olimport*[intuitionistic-logic/propositions-as-types]{propositions-as-types}
 
 \OLEndPartHook
 
