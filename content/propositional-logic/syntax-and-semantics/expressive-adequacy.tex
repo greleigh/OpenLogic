@@ -17,14 +17,14 @@ The only primitive connectives we have defined are one-place (i.e.\ `$\lnot$') a
 \begin{tabular}{c c c | c}
 ${!A}$ & ${!B}$ & ${!C}$ & $\heartsuit({!A},{!B},{!C})$\\
 \hline
- \True  & \True  & \True  & \False \\
- \True  & \True  & \False & \True  \\
- \True  & \False & \True  & \True  \\
- \True  & \False & \False & \False \\
- \False & \True  & \True  & \False \\
- \False & \True  & \False & \True  \\
- \False & \False & \True  & \False \\
- \False & \False & \False & \False
+ $\True$  & $\True$  & $\True$  & $\False$ \\
+ $\True$  & $\True$  & $\False$ & $\True$  \\
+ $\True$  & $\False$ & $\True$  & $\True$  \\
+ $\True$  & $\False$ & $\False$ & $\False$ \\
+ $\False$ & $\True$  & $\True$  & $\False$ \\
+ $\False$ & $\True$  & $\False$ & $\True$  \\
+ $\False$ & $\False$ & $\True$  & $\False$ \\
+ $\False$ & $\False$ & $\False$ & $\False$
 \end{tabular}
 \end{center}
 Probably this new connective would not correspond with any natural English expression (in the way that `$\land$' corresponds with `and'). But a question arises: if we wanted to employ a connective with this characteristic truth table, must we add a \emph{new} connective? Or can we get by with the connectives we \emph{already have}?
@@ -122,8 +122,8 @@ The obvious thing to do is to try to find some truth table which we \emph{cannot
 				\begin{tabular}{c | c}
 				${!A}$ & $\lnot {!A}$\\
 				\hline
-				 \True  & \False \\
-				 \False & \True 
+				 $\True$  & $\False$ \\
+				 $\False$ & $\True$ 
 				\end{tabular}
 				\end{center}
 The intuitive reason, why this should be so, is simple: the top line of the desired truth table needs to have the value False; but the top line of any truth table for a scheme which \emph{only} contains disjunctions will always be True. But so far, this is just hand-waving. To make it rigorous, we need to reach for induction. Here, then, is our rigorous proof.
@@ -149,10 +149,10 @@ In fact, we can generalise \olref{prop:OrNotAdequate}:
 		\begin{tabular}{c c | c c c c}
 		${!A}$ & ${!B}$ & ${!A} \mathrel{\circ_1} {!B}$ & ${!A} \mathrel{\circ_2} {!B}$ & ${!A} \mathrel{\circ_3} {!B}$ & ${!A} \mathrel{\circ_4} {!B}$\\
 		\hline
-			 \True  & \True  & \True  & \True  & \True  & \True  \\
-			 \True  & \False & \True  & \True  & \True  & \False \\
-			 \False & \True  & \True  & \False & \False & \True  \\
-			 \False & \False & \True  & \True  & \False & \False
+			 $\True$  & $\True$  & $\True$  & $\True$  & $\True$  & $\True$  \\
+			 $\True$  & $\False$ & $\True$  & $\True$  & $\True$  & $\False$ \\
+			 $\False$ & $\True$  & $\True$  & $\False$ & $\False$ & $\True$  \\
+			 $\False$ & $\False$ & $\True$  & $\True$  & $\False$ & $\False$
 	\end{tabular}
 	\end{center}
 	(obviously the names for these connectives were chosen arbitrarily). But, exactly as in Proposition \olref{prop:OrNotAdequate}, none of these connectives can express the truth table for negation. So there is a connective whose truth table they cannot express. So none of them is individually expressively adequate.
@@ -162,10 +162,10 @@ In fact, we can generalise \olref{prop:OrNotAdequate}:
 		\begin{tabular}{c c | c c c c}
 		${!A}$ & ${!B}$ & ${!A} \mathrel{\circ_5} {!B}$ & ${!A} \mathrel{\circ_6} {!B}$ & ${!A} \mathrel{\circ_7} {!B}$ & ${!A} \mathrel{\circ_8} {!B}$\\
 		\hline
-			 \True  & \True  & \False & \False & \False & \False \\
-			 \True  & \False & \True  & \True  & \False & \False \\
-			 \False & \True  & \True  & \False & \True  & \False \\
-			 \False & \False & \False & \False & \False & \False 
+			 $\True$  & $\True$  & $\False$ & $\False$ & $\False$ & $\False$ \\
+			 $\True$  & $\False$ & $\True$  & $\True$  & $\False$ & $\False$ \\
+			 $\False$ & $\True$  & $\True$  & $\False$ & $\True$  & $\False$ \\
+			 $\False$ & $\False$ & $\False$ & $\False$ & $\False$ & $\False$ 
 	\end{tabular}
 	\end{center}
 	As above, though, none of these connectives can express the truth table for negation. To show this we prove that any scheme whose only connective is one of these (perhaps several times) is false whenever all of its atomic constituents are false. We can show this by induction, exactly as in Proposition \olref{prop:OrNotAdequate} (I leave the details as an exercise).
@@ -177,10 +177,10 @@ In fact, we can generalise \olref{prop:OrNotAdequate}:
 		\begin{tabular}{c c | c c}
 		${!A}$ & ${!B}$ & ${!A} \mathrel{\circ_9} {!B}$ & ${!A} \mathrel{\circ_{10}} {!B}$\\
 		\hline
-			 \True  & \True  & \False & \False \\
-			 \True  & \False & \False & \True  \\
-			 \False & \True  & \True  & \False \\
-			 \False & \False & \True  & \True  
+			 $\True$  & $\True$  & $\False$ & $\False$ \\
+			 $\True$  & $\False$ & $\False$ & $\True$  \\
+			 $\False$ & $\True$  & $\True$  & $\False$ \\
+			 $\False$ & $\False$ & $\True$  & $\True$  
 	\end{tabular}
 	\end{center}
 	These connectives have redundant positions, in the sense that the truth value of the overarching scheme only depends upon the truth value of one of the atomic constituents. More precisely:
