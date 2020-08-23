@@ -17,14 +17,14 @@ The only primitive connectives we have defined are one-place (i.e.\ `$\lnot$') a
 \begin{tabular}{c c c | c}
 ${!A}$ & ${!B}$ & ${!C}$ & $\heartsuit({!A},{!B},{!C})$\\
 \hline
- T & T & T & F \\
- T & T & F & T \\
- T & F & T & T \\
- T & F & F & F \\
- F & T & T & F \\
- F & T & F & T \\
- F & F & T & F \\
- F & F & F & F
+ \True  & \True  & \True  & \False \\
+ \True  & \True  & \False & \True  \\
+ \True  & \False & \True  & \True  \\
+ \True  & \False & \False & \False \\
+ \False & \True  & \True  & \False \\
+ \False & \True  & \False & \True  \\
+ \False & \False & \True  & \False \\
+ \False & \False & \False & \False
 \end{tabular}
 \end{center}
 Probably this new connective would not correspond with any natural English expression (in the way that `$\land$' corresponds with `and'). But a question arises: if we wanted to employ a connective with this characteristic truth table, must we add a \emph{new} connective? Or can we get by with the connectives we \emph{already have}?
